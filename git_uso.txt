@@ -1,0 +1,64 @@
+git uso
+
+# 1. Ver qué archivos cambiaron
+git status
+
+# 2. Agregar los cambios al "área de staging"
+git add .
+
+# 3. Crear un commit con un mensaje
+git commit -m "descripcion de los cambios"
+
+# 4. Subir a GitHub/GitLab
+ejecutar los cambios con push
+
+git push origin master
+git push origin master
+ │    │    │      │
+ │    │    │      └── 📌 RAMA: A dónde enviar (rama principal)
+ │    │    │
+ │    │    └── 🌐 REMOTO: A dónde enviar (servidor GitHub/GitLab)
+ │    │
+ │    └── 📤 ACCIÓN: Qué hacer (enviar/subir)
+ │
+ └── 🛠️ PROGRAMA: Qué usar (Git)
+
+
+1. git
+   └── "Voy a usar Git"
+
+2. push
+   └── "Voy a SUBIR mis cambios al servidor"
+
+3. origin
+   └── "Al servidor que tengo configurado como 'origin'"
+       └── (https://github.com/tu-usuario/tu-repo.git)
+
+4. master
+   └── "A la rama 'master' del servidor"
+       └── (la rama principal del proyecto)
+
+
+# Buscar algo en el historial
+git log -p | grep -i "TELEGRAM_BOT_TOKEN"
+
+# Buscar un archivo en el historial
+git log --all --full-history -- get_group_id.py
+
+# Eliminar archivo de Git
+git rm --cached get_group_id.py
+
+subir repositorios locales de git a gitlab
+git init
+
+git add .
+giot commit -m "Primeer commit"
+
+conectar con
+git remote origin "url de gitlab_usuario_repo"
+
+revisar el origin con
+git remote -v
+
+eliminar
+git remote rm
