@@ -62,3 +62,6 @@ git remote -v
 
 eliminar
 git remote rm
+
+git pull
+traer archivos
